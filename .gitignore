@@ -1,0 +1,39 @@
+# Python virtual environment
+venv/
+env/
+.venv/
+ENV/
+
+# Python cache & bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Sensitive Google Cloud OAuth Credentials & Cached Tokens
+client_secret*.json
+token*.json
+
+# Generated Output Datasets & Artifacts
+output/
+reports/
+*.db
+*.sqlite
+*.sqlite3
+
+# macOS System Files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows System Files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE & Editor Configs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
