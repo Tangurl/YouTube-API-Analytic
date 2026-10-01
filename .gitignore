@@ -1,39 +1,126 @@
-# Python virtual environment
+# ==============================================================================
+# Python Virtual Environments
+# ==============================================================================
 venv/
-env/
 .venv/
+env/
 ENV/
+env.bak/
+venv.bak/
 
-# Python cache & bytecode
+# ==============================================================================
+# Bytecode & Python Cache
+# ==============================================================================
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 
-# Sensitive Google Cloud OAuth Credentials & Cached Tokens
+# ==============================================================================
+# Sensitive Google Cloud OAuth Credentials & Access Tokens
+# ==============================================================================
 client_secret*.json
+client_secrets*.json
+credentials*.json
+service_account*.json
 token*.json
+tokens/
+*.pem
+*.key
+*.p12
+*.crt
 
-# Generated Output Datasets & Artifacts
+# Allow documentation template / example credentials
+!client_secret.json.example
+!client_secret*.example.json
+!credentials.json.example
+
+# ==============================================================================
+# Environment Variables & Local Secrets
+# ==============================================================================
+.env
+.env.*
+!.env.example
+
+# ==============================================================================
+# Generated Output Datasets, Reports & Standalone Dashboards
+# ==============================================================================
 output/
+output*/
 reports/
+export/
+exports/
+dashboard.html
+*.xlsx
+*.csv
 *.db
 *.sqlite
 *.sqlite3
 
-# macOS System Files
+# ==============================================================================
+# Logs & Diagnostic Dumps
+# ==============================================================================
+*.log
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ==============================================================================
+# Testing & Code Coverage
+# ==============================================================================
+.coverage
+.coverage.*
+.pytest_cache/
+htmlcov/
+.tox/
+.nox/
+
+# ==============================================================================
+# Jupyter Notebook Checkpoints
+# ==============================================================================
+.ipynb_checkpoints/
+
+# ==============================================================================
+# OS Generated Files
+# ==============================================================================
+# macOS
 .DS_Store
+.DS_Store?
 .AppleDouble
 .LSOverride
 ._*
+.Spotlight-V100
+.Trashes
 
-# Windows System Files
+# Windows
 Thumbs.db
 ehthumbs.db
 Desktop.ini
 
-# IDE & Editor Configs
+# Linux
+*~
+
+# ==============================================================================
+# IDE & Editor Configurations
+# ==============================================================================
 .vscode/
 .idea/
 *.sublime-project
 *.sublime-workspace
+*.swp
+*.swo
